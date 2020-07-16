@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color:rgb(255, 255, 255)
+}
+
+.display{
+    height: 100px; 
+    background-color: rgb(215, 216, 215,0.5);  
+}
+
+table{
+    box-shadow: 0 0 20px 5px rgb(215, 216, 215);
+    border-spacing: 0;
+}
+
+
+td{
+    cursor: pointer;
+}
+
+input{
+    height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: right;
+    font-size: 2rem;
+    border: none;
+    background-color: white;
+    background-image: linear-gradient( rgb(247,247,247),rgb(238, 238, 238));
+}
+
+#history{
+    height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+    text-align: right;
+    font-size: 1.7rem;
+    border: none;
+    background-image: linear-gradient(rgb(255,255,255),rgb(247,247,247));
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.button{
+    box-sizing: border-box;
+    height: 80px;
+    width: 40px;
+    text-align: center;
+    border: solid 0.5px rgba(216, 208, 208,0.3);
+}
+
+.number{
+    background-color: white;
+}
+
+.number:hover{
+    background-color: rgba(216, 208, 208,0.3);
+}
+
+.operator{
+    background-color: rgba(255, 197, 197, 0.5);
+}
+
+.operator:hover{
+    background-color:  rgba(255, 197, 197);
+}
+
+.equals{
+    background-color: rgb(255, 229, 145, 0.5);
+}
+
+.equals:hover{
+    background-color: rgb(255, 229, 145);
+}
+
+@media only screen and (max-width: 415px) {
+    table{
+      width: 100%;
+      height: 100vh;
+    }
+  }

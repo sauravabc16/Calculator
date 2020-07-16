@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://kit.fontawesome.com/198cd6dc1b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td colspan="4" class="display">
+                    <div id="history"></div>
+                    <input id="disp" type="text" readonly placeholder="0">
+                </td>
+            </tr>
+            <tr>
+                <td class="button operator" onclick="clr()">CE</td>
+                <td class="button operator" onclick="backspace()"><i class="fas fa-backspace"></i></td>
+                <td class="button equals" colspan="2" onclick="equal()">=</td>               
+            </tr>
+            <tr>
+                <td class="button number" onclick="getValue('7')">7</td>
+                <td class="button number" onclick="getValue('8')">8</td>
+                <td class="button number" onclick="getValue('9')">9</td>
+                <td class="button operator" onclick="getValue('+')">+</td>                
+            </tr>
+            <tr>
+                <td class="button number" onclick="getValue('4')">4</td>
+                <td class="button number" onclick="getValue('5')">5</td>
+                <td class="button number" onclick="getValue('6')">6</td>
+                <td class="button operator" onclick="getValue('-')">-</td>                
+            </tr>
+            <tr>
+                <td class="button number" onclick="getValue('1')">1</td>
+                <td class="button number" onclick="getValue('2')">2</td>
+                <td class="button number" onclick="getValue('3')">3</td>
+                <td class="button operator" onclick="getValue('*')">*</td>                
+            </tr>
+            <tr>
+                <td class="button number" colspan="2" onclick="getValue('0')">0</td>
+                <td class="button number" onclick="getValue('.')">.</td>
+                <td class="button operator" onclick="getValue('/')">/</td>                
+            </tr>
+        </table>
+
+
+        
+        <script src="script.js"></script>
+    </body>
+</html>
+
+
